@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="com.semasoft.msemakweli">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name = "android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    
+    <application android:icon="@drawable/logo3" android:label="@string/app_name">
+    <uses-library android:name="com.google.android.maps" />
+        <activity android:name=".msemakweli_splash"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mk_home"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".projects_list"
+                  android:label="Projects">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.PROJECTSLIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mk_about"
+                  android:label="ABOUT MSEMA KWELI"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.MKABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Share"
+                  android:label="Share"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.Share" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".map"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.MKMAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mkviewTWO"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.MKV2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mkviewTWO_location"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.MKV2LOC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mkComment"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.MKCOMMENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".viewComms"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.VIEWCOMMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".picCapture"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.semasoft.msemakweli.TAKEPICS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

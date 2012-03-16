@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/proj_photos"
+          android:icon="@drawable/menu_photos"
+          android:title="Photos" />
+    <item android:id="@+id/proj_location"
+          android:icon="@drawable/menu_location"
+          android:title="Location" />
+    <item android:id="@+id/proj_comments"
+          android:icon="@drawable/menu_comments"
+          android:title="Comments" />
+</menu>

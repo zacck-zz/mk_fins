@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/mk_home_background" >
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:layout_above="@+id/relativeLayout1">
+	<AbsoluteLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#000000"
+		android:id="@+id/al_action_bar">
+		<ImageView android:layout_height="wrap_content" android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:src="@drawable/mk_title_30"
+			android:padding="5sp" android:layout_x="9dp" android:layout_y="1dp"></ImageView>
+	</AbsoluteLayout>
+	<ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="fill_parent" android:padding="5sp">
+		<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="fill_parent">
+			<LinearLayout android:id="@+id/linearLayout2" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Project Name:" android:textSize="16sp"></TextView>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="Savanah Foot Bridge" android:id="@+id/tvProjectName" android:textSize="19sp"></TextView>
+				<TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:textSize="5sp"></TextView>
+				<TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:text="Expected Output:"></TextView>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffffff" android:textSize="18sp" android:id="@+id/tvExpectedOutput" android:text="Expected Out"></TextView>
+				<TextView android:textSize="5sp" android:layout_width="wrap_content" android:text=" " android:layout_height="wrap_content" android:id="@+id/TextView01"></TextView>
+				<TextView android:layout_height="wrap_content" android:id="@+id/TextView05" android:textSize="16sp" android:layout_width="wrap_content" android:text="Implementation Status:"></TextView>
+				<TextView android:layout_height="wrap_content" android:textSize="18sp" android:layout_width="wrap_content" android:textColor="#ffffff" android:text="Ongoing/Completed" android:id="@+id/tvImplementationStatus"></TextView>
+				<TextView android:layout_height="wrap_content" android:id="@+id/TextView07" android:textSize="5sp" android:text=" " android:layout_width="wrap_content"></TextView>
+				<TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Estimated Cost:" android:textSize="16sp"></TextView>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvEstimatedCost" android:textColor="#ffffff" android:textSize="18sp" android:text="KSH 3,000,000 "></TextView>
+				<TextView android:layout_height="wrap_content" android:id="@+id/TextView09" android:textSize="5sp" android:text=" " android:layout_width="wrap_content"></TextView>
+				<TextView android:layout_height="wrap_content" android:id="@+id/TextView08" android:textSize="16sp" android:text="Amount Spent:" android:layout_width="wrap_content"></TextView>
+				<TextView android:layout_height="wrap_content" android:textSize="18sp" android:layout_width="wrap_content" android:textColor="#ffffff" android:text="ksh 900,000" android:id="@+id/tvTotalAmount"></TextView>
+				<TextView android:textSize="5sp" android:layout_width="wrap_content" android:text=" " android:layout_height="wrap_content" android:id="@+id/TextView02"></TextView>
+				<TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:text="Activity to be done:"></TextView>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffffff" android:textSize="18sp" android:text="This activity still." android:id="@+id/tvActivityToBeDone"></TextView>
+				<TextView android:textSize="5sp" android:layout_width="wrap_content" android:text=" " android:layout_height="wrap_content" android:id="@+id/TextView03"></TextView>
+				<TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:text="Remarks:"></TextView>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffffff" android:textSize="18sp" android:id="@+id/tvRemarks" android:text="Safer crossing for residents"></TextView>
+				<TextView android:layout_width="wrap_content" android:text=" " android:layout_height="wrap_content" android:id="@+id/TextView04" android:textSize="18sp"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+<RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_alignParentBottom="true">
+    <Button android:drawableRight="@drawable/btn_share" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:text=" Share" android:id="@+id/btnShare" android:layout_width="wrap_content" android:layout_toLeftOf="@+id/sp"></Button>
+    <Button android:drawableRight="@drawable/btn_comment" android:layout_height="wrap_content" android:text="  Comment" android:id="@+id/btnComment" android:layout_alignParentRight="true" android:drawablePadding="5sp" android:layout_width="wrap_content" android:layout_toRightOf="@+id/sp"></Button>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerInParent="true" android:text=" " android:id="@+id/sp"></TextView>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1.key:0SBd898yNBWREp-kh0pUg-9tfPKZEqujrspX-gw debug.key:0o1ve89zD2nWhLnhAKfPdg1haxAqPkeYJ5reLig -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/mk_home_background">
+	<com.google.android.maps.MapView
+		android:id="@+id/theMapView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:clickable="true"
+		android:apiKey="0uKuw3gB1Ha6hu13zpkAKMKd_83Veko3GCmnNgw" />
+	<AbsoluteLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#000000"
+		android:id="@+id/al_action_bar">
+		<ImageView android:layout_height="wrap_content" android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:src="@drawable/mk_title_30"
+			android:padding="5sp" android:layout_x="9dp" android:layout_y="1dp"></ImageView>
+	</AbsoluteLayout>
+	<ImageButton android:layout_height="wrap_content"
+		android:id="@+id/btnSearch" android:src="@drawable/map_search"
+		android:layout_width="wrap_content" android:background="@null"
+		android:layout_alignParentRight="true" android:paddingRight="5sp"
+		android:paddingTop="10sp" android:paddingBottom="5sp"
+		android:paddingLeft="5sp"></ImageButton>
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="wrap_content" android:layout_below="@+id/al_action_bar"
+		android:layout_width="fill_parent" android:padding="2sp"
+		android:background="#000000" android:id="@+id/ly_Search"
+		android:visibility="gone">
+		<RelativeLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:id="@+id/relativeLayout1">
+			<AutoCompleteTextView
+				android:hapticFeedbackEnabled="true" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+				android:layout_toLeftOf="@+id/btnGo" android:id="@+id/ac_constituency"
+				android:hint="Constituency"></AutoCompleteTextView>
+			<ImageButton android:layout_width="wrap_content"
+				android:id="@+id/btnGo" android:src="@drawable/btn_go"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"></ImageButton>
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

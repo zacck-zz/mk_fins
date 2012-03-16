@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 0SBd898yNBWTxU543javD8e9_STe4N1KK-lpTJg 0o1ve89zD2nWhLnhAKfPdg1haxAqPkeYJ5reLig -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:padding="5sp" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent" android:layout_above="@+id/btnOK"
+		android:padding="5sp">
+		<com.google.android.maps.MapView
+			android:clickable="true" android:layout_height="fill_parent"
+			android:id="@+id/theMapView" android:layout_width="fill_parent"
+			android:apiKey="0uKuw3gB1Ha6hu13zpkAKMKd_83Veko3GCmnNgw"></com.google.android.maps.MapView>
+	</LinearLayout>
+	<Button android:layout_height="wrap_content" android:id="@+id/btnOK"
+		android:layout_width="fill_parent" android:layout_alignParentBottom="true"
+		android:text="OK"></Button>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, msemakweli_splash!</string>
+    <string name="app_name">Msema Kweli</string>
+    <string-array name="constituencies">
+        <item >Embakasi</item>
+        <item> Kasarani</item>
+        <item >Westlands</item>
+        <item>Dagoreti</item>
+        <item >Langata</item>
+        <item >Starehe</item>
+        <item>Makadara</item>
+        <item >Voi</item>
+        <item >Mwatete</item>
+        <item >Wundanyi</item>
+        <item>Taveta</item>
+        <item >Lamu East</item>
+        <item >Lamu West</item>
+        <item>Magarini</item>
+        <item>Malindi</item>
+        <item >Bura</item>
+        <item >Galole</item>
+        <item >Garsen</item>
+        <item>Ganze</item>
+        <item>Kaloleni</item>
+        <item >Bahari</item>
+        <item >Kinango</item>
+        <item >Matuga</item>
+        <item>Msambweni</item>    
+        <item>Mvita</item>
+        <item >Likoni</item>
+        <item>Kisauni</item>
+        <item>Changamwe</item>
+        <item >Mandera East</item>
+        <item >Mandera Central</item>
+        <item >Mandera West</item>
+        <item >Wajir South</item>
+        <item >Wajir East</item>
+        <item >Wajir West</item>
+        <item >Wajir North</item>
+        
+    </string-array>
+    <string name="empty_list">There are no projects to show at the moment</string>
+    <string name="projectsin">Projects in Constituency:</string>
+    <string name="consthint">Constituency...</string>
+</resources>

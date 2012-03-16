@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/mk_home_background">
+	<AbsoluteLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#000000"
+		android:id="@+id/al_action_bar">
+		<ImageView android:layout_height="wrap_content" android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:src="@drawable/mk_title_30"
+			android:padding="5sp" android:layout_x="9dp" android:layout_y="1dp"></ImageView>
+	</AbsoluteLayout>
+	<ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+			<AbsoluteLayout android:id="@+id/absoluteLayout1" android:layout_width="match_parent" android:layout_height="fill_parent">
+				<Button android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:textSize="19sp" android:drawableTop="@drawable/btn_viewreport" android:drawablePadding="1sp" android:padding="5sp" android:id="@+id/btnViewReports" android:background="@null" android:layout_x="32dp" android:layout_y="13dp" android:text="View Projects"></Button>
+				<Button android:text="Settings" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:textSize="19sp" android:drawableTop="@drawable/btn_settings" android:drawablePadding="1sp" android:padding="5sp" android:id="@+id/btnSettings" android:background="@null" android:layout_x="204dp" android:layout_y="245dp"></Button>
+				<Button android:text="Search" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:textSize="19sp" android:drawableTop="@drawable/btn_search" android:drawablePadding="1sp" android:padding="5sp" android:id="@+id/btnSearch" android:background="@null" android:layout_x="208dp" android:layout_y="134dp"></Button>
+				<Button android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:textSize="19sp" android:drawablePadding="1sp" android:padding="5sp" android:background="@null" android:layout_x="204dp" android:layout_y="13dp" android:id="@+id/btnNews" android:text="News" android:drawableTop="@drawable/btn_news"></Button>
+				<Button android:text="View Map" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:textSize="19sp" android:drawableTop="@drawable/btn_map" android:drawablePadding="1sp" android:padding="5sp" android:id="@+id/btnViewMap" android:background="@null" android:layout_x="48dp" android:layout_y="133dp"></Button>
+				<Button android:text="About" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:textSize="19sp" android:drawableTop="@drawable/btn_about" android:drawablePadding="1sp" android:padding="5sp" android:id="@+id/btnAbout" android:background="@null" android:layout_x="60dp" android:layout_y="249dp"></Button>
+			</AbsoluteLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
