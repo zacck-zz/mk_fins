@@ -67,6 +67,7 @@ public class projects_list extends ListActivity implements OnClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.projects_list);
 		
+		Toast.makeText(projects_list.this, "Please wait while the list of constiuencies is collected", Toast.LENGTH_SHORT).show();
 		pickConts p = new pickConts();
 		p.execute();
 
@@ -259,7 +260,7 @@ public class projects_list extends ListActivity implements OnClickListener,
 		protected void onProgressUpdate(Void... values) {
 			// TODO Auto-generated method stub
 			//super.onProgressUpdate(values);
-			Toast.makeText(projects_list.this, "Please wait while the list of constiuencies is collected", Toast.LENGTH_SHORT).show();
+			
 
 		}
 
